@@ -15,7 +15,3 @@ require("lazy").setup({
     spec = "dvisner.lazy",
     change_detection = { notify = false }
 })
---[[
-require("lazy").setup({
-	{ "tpope/vim-fugitive", name = "fugitive", priority = 1000 },
-})--]]
