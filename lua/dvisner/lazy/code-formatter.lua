@@ -16,6 +16,7 @@ return {
 					markdown = { "prettierd" },
 					lua = { "stylua" },
 					rust = { "rustfmt" },
+					zsh = { "beautysh" },
 				},
 				format_on_save = {
 					lsp_fallback = true,
