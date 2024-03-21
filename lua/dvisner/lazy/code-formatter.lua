@@ -11,7 +11,7 @@ return {
 					javascriptreact = { "prettierd" },
 					typescriptreact = { "prettierd" },
 					css = { "prettierd" },
-					html = { "prettierd" },
+					--html = { "prettierd" },
 					json = { "prettierd" },
 					markdown = { "prettierd" },
 					lua = { "stylua" },
@@ -19,7 +19,7 @@ return {
 					zsh = { "beautysh" },
 				},
 				format_on_save = {
-					lsp_fallback = true,
+					--	lsp_fallback = true,
 					async = false,
 					timeout_ms = 2000,
 				},

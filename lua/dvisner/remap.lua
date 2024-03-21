@@ -24,3 +24,5 @@ function append_semicolon()
 end
 vim.keymap.set("i", ";;", "<C-O>:lua append_semicolon()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>;;", "A;<Esc>", { noremap = true, silent = true })
+
+vim.keymap.set("i", "{<CR>", "{<CR>}<Esc>O", { noremap = true, silent = true })
