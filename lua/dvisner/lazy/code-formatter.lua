@@ -15,11 +15,10 @@ return {
 					json = { "prettierd" },
 					markdown = { "prettierd" },
 					lua = { "stylua" },
-					rust = { "rustfmt" },
 					zsh = { "beautysh" },
 				},
 				format_on_save = {
-					--	lsp_fallback = true,
+					lsp_fallback = true,
 					async = false,
 					timeout_ms = 2000,
 				},
