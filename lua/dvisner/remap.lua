@@ -15,14 +15,28 @@ vim.keymap.set("v", "<leader>y", '"+y')
 
 vim.keymap.set("n", "<leader>yy", '"+yy')
 
-function append_semicolon()
+function AppendSemicolon()
 	local current_line = vim.fn.line(".")
 	local line_length = #vim.fn.getline(current_line)
 	local col = line_length + 1
 	vim.api.nvim_buf_set_text(0, current_line - 1, col - 1, current_line - 1, col - 1, { ";" })
 	vim.fn.cursor(current_line, col)
 end
-vim.keymap.set("i", ";;", "<C-O>:lua append_semicolon()<CR>", { noremap = true, silent = true })
+vim.keymap.set("i", ";;", "<C-O>:lua AppendSemicolon()<CR>", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>;;", "A;<Esc>", { noremap = true, silent = true })
 
 vim.keymap.set("i", "{<CR>", "{<CR>}<Esc>O", { noremap = true, silent = true })
+
+function ToggleComment()
+	local line = vim.fn.getline(".")
+	local new_line = "//" .. line
+
+	if string.match(line, "//") then
+		local new_string, _ = string.gsub(line, "//", "")
+		new_line = new_string
+	end
+
+	vim.fn.setline(".", new_line)
+end
+
+vim.keymap.set("n", "<leader>//", ":lua ToggleComment()<CR>", { noremap = true, silent = true })
