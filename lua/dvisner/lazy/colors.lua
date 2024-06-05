@@ -1,12 +1,12 @@
 return {
 	{
-		"maxmx03/solarized.nvim",
+		"catppuccin/nvim",
 		lazy = false,
 		priority = 1000,
 		config = function()
 			vim.o.background = "light"
 
-			vim.cmd.colorscheme("solarized")
+			vim.cmd.colorscheme("catppuccin")
 		end,
 	},
 }

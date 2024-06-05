@@ -31,6 +31,8 @@ return {
 				"lua_ls",
 				"tsserver",
 				"rust_analyzer",
+				"gopls",
+				"templ",
 			},
 			handlers = {
 				function(server_name) -- default handler (optional)
