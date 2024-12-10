@@ -10,6 +10,7 @@ end)
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
 vim.keymap.set("n", "<leader>bp", ":bprev<CR>")
+vim.keymap.set("n", "<leader>bd", ":bd<CR>")
 
 vim.keymap.set("v", "<leader>y", '"+y')
 
