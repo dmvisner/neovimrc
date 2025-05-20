@@ -65,7 +65,7 @@ return {
 
                 ["tsserver"] = function()
                     local lspconfig = require("lspconfig")
-                    lspconfig.ts_ls.setup({
+                    lspconfig.tsserver.setup({
                         settings = {
                             typescript = {
                                 inlayHints = {
