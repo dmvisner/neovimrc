@@ -1,12 +1,12 @@
 return {
-	{
-		"catppuccin/nvim",
-		lazy = false,
-		priority = 1000,
-		config = function()
-			vim.o.background = "light"
+    {
+        "catppuccin/nvim",
+        lazy = false,
+        priority = 1000,
+        config = function()
+            vim.o.background = "dark"
 
-			vim.cmd.colorscheme("catppuccin")
-		end,
-	},
+            vim.cmd.colorscheme("catppuccin")
+        end,
+    },
 }
